@@ -11,17 +11,20 @@
 </body>
 <script>
     const sayHitesh = function(){
-        console.log("Hitesh");
+        console.log("Nikhil");
     }
+
     const changeText = function(){
         document.querySelector('h1').innerHTML = "best JS series"
     }
 
     const changeMe = setTimeout(changeText, 2000)
+    //reference dena execution nahi
 
     document.querySelector('#stop').addEventListener('click', function(){
-        clearTimeout(changeMe)
+        clearTimeout(changeMe) // to clear set timeout function if we click in 2s it will not changed
         console.log("STOPPED")
     })
+
 </script>
 </html>
